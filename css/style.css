@@ -25,6 +25,7 @@ header {
 }
 header h1 {
     color: white;
+    padding: 5px;
 }
 header nav {
     width: 50%;
@@ -129,15 +130,16 @@ header nav ul li {
 
 .nosotros {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     background-color:#1A5276;
 }
 
 .nosotros img {
-    width: 30%;
+    width: 35%;
     height: 650px;
     padding: 5px;
+    object-fit: cover;
 }
 
 .nosotros div {
@@ -178,12 +180,12 @@ header nav ul li {
 
 .productos h2 {
     width: auto;
-    background-color: #1a5376c2;
+    background-color:#3D30A2;
     text-align: center;
     font-size: 40px;
-    color: black;
+    color: rgb(255, 255, 255);
     margin:2px;
-    padding: 4px;
+    padding: 3px;
 }
 
 .productos .cards-productos {
@@ -220,6 +222,7 @@ header nav ul li {
 .productos .cards-productos img {
     width: 500px;
     height: 550px;
+    object-fit: cover;
 
 }
 
@@ -275,6 +278,7 @@ header nav ul li {
 
 footer {
     width: 100%;
+    height: auto;
     background-color: #1A5276; 
 }
 .pie {
@@ -321,7 +325,6 @@ footer {
 .portada div {
     display: flex;
     flex-direction: column;
-
 }
 
 .portada h1 {
@@ -345,6 +348,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #3D30A2;;
 }
 
 .info div {
@@ -363,11 +367,13 @@ footer {
 .info h2 {
     text-align: center;
     font-size: 30px;
+    color: white;
 }
 
 .info p {
     font-size: 20px;
     text-align: center;
+    color: white;
 }
 
 .info div a {
@@ -387,7 +393,7 @@ footer {
     display: grid;
     grid-template-columns:repeat(3, 1fr);
     grid-auto-rows: 350px;
-    gap: 10px;
+    gap: 15px;
 }
 
 .grid-galeria div {
@@ -396,9 +402,11 @@ footer {
 
 .grid-galeria div h3 {
     position: absolute;
+    text-align: center;
     width: 100%;
     bottom: 0;
     color: white;
+    font-size: 20px;
     background-color: #25136880;
 }
 
@@ -439,30 +447,6 @@ footer {
     padding: 10px;
 }
 
-.navegador {
-    width: 50%;
-}
-
-.navegador ul {
-    width: 100%;
-   list-style: none;
-   display: flex;
-   justify-content: space-around;
-}
-
-
-.navegador ul li a {
-    list-style: none;
-    text-decoration: none;
-    color: azure;
- 
-
-}
-
-.navegador ul li {
-    margin: 5px;
-}
-
 
 /**PAGINA NUEVA JUEGOS**/
 
@@ -474,25 +458,37 @@ footer {
 }
 
 .contenido {
-    border: solid 2px #1a537680;
-    text-align: center;
-    background-color: #1a537680;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#3D30A2;
     color: white;
-    padding: top 5px;
     margin:3px;
-    box-shadow: 1px black 5px;
-    border-radius: 10px;
+}
+
+.contenido h2 {
+    font-size: 25px;
+}
+
+.contenido p {
+    font-size: 15px;
+    text-align: center;
 }
 
 .titulo-contenido {
     text-align: center;
     font-size: 40px;
-    margin: 5px;
+    margin: 2px;
+    padding: 5px;
+    background-color: #3D30A2;
+    color: white;
 }
 .games .card-games img {
-    width: 80%;
+    width: 85%;
     height: 600px;
-    margin: 10px;
+    margin: 52px;
+    object-fit: cover;
 }
 
 
