@@ -1,0 +1,78 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #251368;
+    padding: 10px;
+
+    a {
+        font-size: 40px;
+        color: white;
+        padding: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover{
+            color: white;
+
+        }
+    }
+
+    nav {
+        ul {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        li {
+            margin: 5px;
+        }
+    }
+}
+
+
+.bg-light {
+    background-color: #251368 !important;
+}
+
+
+.navbar-nav .nav-link.active {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+
+}
+
+.nav-link:focus {
+    color: white;
+}
+
+.nav-link:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.btn-outline-success {
+    border: pink;
+    color: white;
+
+
+}
+
+.btn-outline-success:hover {
+    background-color: white;
+    color: black;
+}
+
+.dropdown-menu {
+    background-color: #251368;
+    color: white;
+}
+
+.dropdown-item {
+    color: white;
+    font-size: 15px;
+}

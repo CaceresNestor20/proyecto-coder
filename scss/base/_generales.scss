@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.img-1 {
+    grid-row: span 2;
+}
+
+.img-3 {
+    grid-row: span 2;
+}
+
+.img-6 {
+    grid-column: span 2;
+}
+
+// VARIABLES 
+$colores:#251368, #ECECEC , rgb(109, 24, 207);
+
+// EXTENDS
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// MIXMINS
+@mixin flex ($flex, $direction, $justy, $alingn, $wrap){
+    display:$flex;
+    flex-direction: $direction;
+    justify-content: $justy;
+    align-items: $alingn;
+    flex-wrap: $wrap;
+}   
