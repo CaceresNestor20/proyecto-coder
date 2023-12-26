@@ -199,7 +199,7 @@ header {
       -webkit-border-radius: 18px 23px 22px 22px;
       -moz-border-radius: 18px 23px 22px 22px;
       color: white; }
-      .games .card-games .contenido h2 {
+      .games .card-games .contenido h1 {
         margin-top: 10px;
         font-size: 25px;
         font-weight: 700; }
@@ -508,6 +508,10 @@ header {
     text-align: center;
     font-weight: 400; } }
 
+@media screen and (max-width: 482px) {
+  .nosotros div p {
+    font-size: 15px; } }
+
 @media screen and (max-width: 990px) {
   .nosotros div {
     display: flex;
@@ -521,6 +525,11 @@ header {
     font-weight: 500;
     margin-top: 5px; } }
 
+@media screen and (max-width: 482px) {
+  .nosotros div h2 {
+    font-size: 30px;
+    text-align: center; } }
+
 @media screen and (max-width: 1100px) {
   .nosotros div a {
     border-radius: 10px;
@@ -529,11 +538,24 @@ header {
     padding: 5px;
     margin: 2px; } }
 
+@media screen and (max-width: 482px) {
+  .nosotros div a {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: center;
+    width: auto; } }
+
 @media screen and (max-width: 1100px) {
   .nosotros img {
     width: 400px;
     height: 450px;
     margin-bottom: 10px; } }
+
+@media screen and (max-width: 482px) {
+  .nosotros img {
+    width: 350px;
+    height: 400px; } }
 
 /*------------FOOTER----------*/
 @media screen and (max-width: 990px) {
@@ -541,9 +563,19 @@ header {
     font-size: 30px;
     padding: 6px; } }
 
+@media screen and (max-width: 482px) {
+  .pie h2 {
+    font-size: 25px;
+    padding: 6px; } }
+
 @media screen and (max-width: 990px) {
   .redes i {
     font-size: 30px;
+    margin: 5px; } }
+
+@media screen and (max-width: 482px) {
+  .redes i {
+    font-size: 20px;
     margin: 5px; } }
 
 /*------------PAG-NOSOTROS----------*/
@@ -565,16 +597,37 @@ header {
     justify-content: center;
     align-items: center; } }
 
+@media screen and (max-width: 680px) {
+  .info div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%; } }
+
 @media screen and (max-width: 1140px) {
   .info h2 {
     font-size: 25px;
     font-weight: 700;
     margin-top: 10px; } }
 
+@media screen and (max-width: 657px) {
+  .info h2 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center; } }
+
 @media screen and (max-width: 1140px) {
-  .info p {
+  .info div p {
+    text-align: center;
     font-size: 15px;
     font-weight: 500; } }
+
+@media screen and (max-width: 658px) {
+  .info div p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100; } }
 
 @media screen and (max-width: 1140px) {
   .info div a {
@@ -584,21 +637,34 @@ header {
     width: 30%; } }
 
 @media screen and (max-width: 1140px) {
-  .portada div h2 {
+  .portada div h1 {
     text-align: center;
-    font-size: 20px;
+    font-size: 45px;
     font-weight: 500; } }
+
+@media screen and (max-width: 780px) {
+  .portada div h1 {
+    font-size: 35px; } }
 
 @media screen and (max-width: 1140px) {
   .portada div p {
+    font-size: 18px; } }
+
+@media screen and (max-width: 780px) {
+  .portada div p {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500; } }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 700px) {
   .info img {
-    width: 55%;
-    height: 650px; } }
+    width: 86%;
+    height: 350px; } }
+
+@media screen and (max-width: 500px) {
+  .info img {
+    width: 20%;
+    height: 200px; } }
 
 @media screen and (max-width: 950px) {
   .grid-galeria {
@@ -639,3 +705,7 @@ header {
 @media screen and (max-width: 800px) {
   .mapa-ubi div ul li {
     font-size: 20px; } }
+
+@media screen and (max-width: 800px) {
+  .mapa-ubi iframe {
+    width: auto; } }
