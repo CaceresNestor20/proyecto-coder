@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap");
+.productos .card-productos div img {
+  transition: 2s; }
+
+.games .card-games .contenido img {
+  transition: 2s; }
+
+i {
+  transition: 1s; }
+
 * {
   padding: 0;
   margin: 0;
@@ -84,8 +93,9 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .hero h2 {
+  .hero h1 {
     font-size: 30px;
+    font-weight: 600;
     color: white;
     padding: 5px; }
   .hero a {
@@ -95,6 +105,9 @@ header {
     text-decoration: none;
     padding: 10px;
     margin: 5px; }
+    .hero a:hover {
+      background-color: rgba(43, 8, 85, 0.911);
+      transition: 1.3s; }
 
 .nosotros {
   width: 100%;
@@ -120,6 +133,9 @@ header {
       text-decoration: none;
       width: 50%;
       margin-top: 10px; }
+      .nosotros div a:hover {
+        background-color: rgba(43, 8, 85, 0.911);
+        transition: 1.3s; }
   .nosotros img {
     width: 30%;
     height: auto;
@@ -158,7 +174,10 @@ header {
       .productos .cards-productos div img {
         width: 500px;
         height: 550px;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: 2s; }
+        .productos .cards-productos div img:hover {
+          transform: scale(1.1); }
       .productos .cards-productos div a {
         display: flex;
         justify-content: center;
@@ -168,6 +187,9 @@ header {
         text-decoration: none;
         padding: 10px;
         margin: 5px; }
+        .productos .cards-productos div a:hover {
+          background-color: rgba(43, 8, 85, 0.911);
+          transition: 1.3s; }
 
 .games {
   display: flex;
@@ -208,6 +230,8 @@ header {
         height: 600px;
         margin: 20px;
         object-fit: cover; }
+        .games .card-games .contenido img:hover {
+          transform: scale(1.1); }
       .games .card-games .contenido div {
         width: 90%;
         padding: 5px;
@@ -320,6 +344,9 @@ header {
       width: 40%;
       text-align: center;
       margin: 10px; }
+      .info div a:hover {
+        background-color: rgba(43, 8, 85, 0.911);
+        transition: 1.3s; }
   .info img {
     width: 700px;
     height: 800px;
@@ -459,7 +486,9 @@ header {
   padding: 10px; }
   .pie h2 {
     color: white;
-    font-size: 35px; }
+    font-size: 30px;
+    margin-top: 6px;
+    text-align: center; }
   .pie .redes {
     display: flex;
     justify-content: end;
@@ -468,6 +497,8 @@ header {
       font-size: 40px;
       color: white;
       margin: 5px; }
+      .pie .redes i:hover {
+        transform: scale(1.3); }
 
 /*------------NAV----------*/
 @media screen and (max-width: 990px) {
@@ -484,11 +515,15 @@ header {
     display: none; } }
 
 /*------------PRODUCTOS----------*/
-@media screen and (max-width: 967px) {
-  .productos .cards-productos img {
+@media screen and (max-width: 610px) {
+  .productos .cards-productos div img {
     width: 400px;
-    height: 400px;
-    object-fit: cover; } }
+    height: 550px; } }
+
+@media screen and (max-width: 570px) {
+  .productos .cards-productos div img {
+    width: 380px;
+    height: 450px; } }
 
 @media screen and (max-width: 990px) {
   .productos h2 {
@@ -508,6 +543,12 @@ header {
     text-align: center;
     font-weight: 400; } }
 
+@media screen and (max-width: 580px) {
+  .nosotros div p {
+    width: 85%;
+    font-size: 18px;
+    font-weight: 400; } }
+
 @media screen and (max-width: 482px) {
   .nosotros div p {
     font-size: 15px; } }
@@ -525,6 +566,10 @@ header {
     font-weight: 500;
     margin-top: 5px; } }
 
+@media screen and (max-width: 490px) {
+  .nosotros div h2 {
+    font-size: 35px; } }
+
 @media screen and (max-width: 482px) {
   .nosotros div h2 {
     font-size: 30px;
@@ -534,9 +579,14 @@ header {
   .nosotros div a {
     border-radius: 10px;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 18px;
     padding: 5px;
     margin: 2px; } }
+
+@media screen and (max-width: 580px) {
+  .nosotros div a {
+    font-size: 18px;
+    text-align: center; } }
 
 @media screen and (max-width: 482px) {
   .nosotros div a {
@@ -559,17 +609,7 @@ header {
 
 /*------------FOOTER----------*/
 @media screen and (max-width: 990px) {
-  .pie h2 {
-    font-size: 30px;
-    padding: 6px; } }
-
-@media screen and (max-width: 482px) {
-  .pie h2 {
-    font-size: 25px;
-    padding: 6px; } }
-
-@media screen and (max-width: 990px) {
-  .redes i {
+  .pie .redes i {
     font-size: 30px;
     margin: 5px; } }
 
@@ -582,7 +622,7 @@ header {
 @media screen and (max-width: 990px) {
   .pie h2 {
     font-size: 30px;
-    padding: 6 px; } }
+    padding: 6px; } }
 
 @media screen and (max-width: 990px) {
   .redes i {
@@ -663,8 +703,8 @@ header {
 
 @media screen and (max-width: 500px) {
   .info img {
-    width: 20%;
-    height: 200px; } }
+    width: 85%;
+    height: 300px; } }
 
 @media screen and (max-width: 950px) {
   .grid-galeria {

@@ -21,13 +21,31 @@
 /*------------PRODUCTOS----------*/
 
 
-@media screen and (max-width: 967px) {
-    .productos .cards-productos img {
+@media screen and  (max-width: 610px) {
+
+    .productos .cards-productos div img {
+
         width: 400px;
-        height: 400px;
-        object-fit: cover;
+        height: 550px;
+
     }
+
 }
+
+@media screen and (max-width: 570px) {
+
+    .productos .cards-productos div img {
+
+        width: 380px;
+        height: 450px;
+
+    }
+
+}
+
+
+
+
 @media screen and (max-width: 990px) {
     .productos h2 {
         font-size: 30px;
@@ -53,6 +71,15 @@
     }
 }
 
+@media screen and (max-width: 580px) {
+    .nosotros div p {
+        width: 85%;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+
 @media screen and (max-width: 482px) {
     .nosotros div p {
         font-size: 15px;
@@ -76,6 +103,14 @@
     }
 }
 
+
+
+@media screen and (max-width: 490px) {
+    .nosotros div h2 {
+        font-size: 35px;
+    }
+}
+
 @media screen and (max-width: 482px) {
     .nosotros div h2 {
         font-size: 30px;
@@ -87,12 +122,21 @@
     .nosotros div a {
         border-radius: 10px;
         margin-bottom: 10px;
-        font-size: 20px;
+        font-size: 18px;
         padding: 5px;
         margin: 2px;
 
     }
 }
+
+
+@media screen and (max-width: 580px) {
+    .nosotros div a {
+        font-size: 18px;
+        text-align: center;
+     }
+}
+
 
 @media screen and (max-width: 482px) {
     .nosotros div a {
@@ -127,21 +171,7 @@
 /*------------FOOTER----------*/
 
 @media screen and (max-width:990px) {
-    .pie h2 {
-        font-size: 30px;
-        padding: 6px;
-    }
-}
-
-@media screen and (max-width:482px) {
-    .pie h2 {
-        font-size: 25px;
-        padding: 6px;
-    }
-}
-
-@media screen and (max-width:990px) {
-    .redes i {
+    .pie .redes i {
         font-size: 30px;
         margin: 5px;
     }
@@ -159,7 +189,7 @@
 @media screen and (max-width:990px) {
     .pie h2 {
         font-size: 30px;
-        padding: 6 px;
+        padding: 6px;
     }
 }
 
@@ -289,8 +319,8 @@
 
 @media screen and (max-width:500px) {
     .info  img {
-        width:20%;
-        height: 200px;
+        width:85%;
+        height: 300px;
     }
 }
 

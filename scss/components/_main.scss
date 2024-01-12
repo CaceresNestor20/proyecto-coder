@@ -12,8 +12,9 @@
     justify-content: center;
     align-items: center;
 
-    h2 {
+    h1 {
         font-size: 30px;
+        font-weight: 600;
         color: white;
         padding: 5px;
     }
@@ -25,6 +26,10 @@
         text-decoration: none;
         padding: 10px;
         margin: 5px;
+        &:hover{
+            background-color:rgba(43, 8, 85, 0.911);
+            transition: 1.3s;
+        }
     }
 }
 
@@ -59,6 +64,10 @@
             @extend %flex-center;
             width: 50%;
             margin-top: 10px;
+            &:hover{
+                background-color:rgba(43, 8, 85, 0.911);
+                transition: 1.3s;
+            }
         }
     }
 
@@ -67,6 +76,7 @@
         height: auto;
         padding: 5px;
         object-fit: cover;
+
     }
 }
 
@@ -108,8 +118,14 @@
                 width: 500px;
                 height: 550px;
                 object-fit: cover;
-
+                transition: 2s;
+                
+                &:hover{
+                    transform: scale(1.1);
+                }
+                
             }
+    
 
             a {
                 display: flex;
@@ -120,7 +136,12 @@
                 text-decoration: none;
                 padding: 10px;
                 margin: 5px;
+                &:hover{
+                    background-color:rgba(43, 8, 85, 0.911);
+                    transition: 1.3s;
+                }
             }
+  
         }
 
 
@@ -173,6 +194,9 @@
                 height: 600px;
                 margin: 20px;
                 object-fit: cover;
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
             div{
                 width: 90%;
@@ -259,6 +283,10 @@
             width: 40%;
             text-align: center;
             margin: 10px; 
+            &:hover{
+                background-color:rgba(43, 8, 85, 0.911);
+                transition: 1.3s;
+            }
         }
 
     }
